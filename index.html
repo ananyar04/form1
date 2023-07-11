@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+</head>
+<body>
+    <div id="title" class="text-5xl text-center m-4" ><h1>Survey Form</h1></div><br/>
+    <form id="survey-form">
+        <div class="form-field text-center">
+            <label for="name" id="label-name" class="">Name:</label>
+            <div class="w-72">
+                <div class="relative h-10 w-full min-w-[200px]">
+                  <input
+                    class="peer h-full w-full rounded-[7px] border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+                    placeholder=" "
+                  />
+                  <label class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-pink-500 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:border-pink-500 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:border-pink-500 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
+                    Required
+                  </label>
+                </div>
+              </div>
+           
+            
+        </div>
+        <br>
+        <div class="form-field">
+            <label for="age" id="label-age">Age:</label><br/>
+            <input type="number" id="age" placeholder="Please Enter Age">
+        </div>
+        <br/>
+         <div class="form-field">
+           
+            <label>Gender:</label>
+            <br>
+           <input type="radio" id="male" name="Gender" value="male">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="Gender" value="Female">
+            <label for="Female">Female</label>
+            <input type="radio" id="Other" name="Gender" value="Other">
+            <label for="Other">Other</label>                       
+        </div>
+        <br/>
+        <div class="form-field">
+            <label for="email" id="label-email">Email:</label><br/>
+            <input type="email" id="email" placeholder="Please Enter Email">
+        </div>
+        <br/>
+        <div class="form-field">
+            <label for="role" id="label-Role">Role:</label><br/>
+            <select name="role" id="role">
+                <option value="Team Lead">Team Lead</option>
+                <option value=" Team Member"> Team Member</option>
+                <option value="Intern">Intern</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <br/>
+        <div class="form-field">
+            <label>Which domain(s) do you belong to :</label><br/><br/>
+            <input type="checkbox" id="domain-cloud" name="cloud" value="cloud">Cloud<br/>
+            <input type="checkbox" id="domain-Blockchain" name="Blockchain" value="Blockchain">Blockchain<br/>
+            <input type="checkbox" id="domain-Data Analytics" name="Data Analytics" value="Data Analytics">Data Analytics<br/>
+            <input type="checkbox" id="domain-Web Developement" name="Web Developement" value="Web Developement">Web Developement<br/>
+        </div><br/>
+        <div class="form-field">
+            <label for="comment" id="Comment">Comments:</label><br/>
+            <textarea name="comment" id="comment" placeholder="Enter Any Comments Here"></textarea>
+        </div><br/>
+     
+       
+</body>
+</html>
